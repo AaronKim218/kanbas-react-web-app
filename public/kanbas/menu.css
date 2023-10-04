@@ -1,0 +1,45 @@
+ul.menu {
+    list-style-type: none;
+    padding: 0px;
+    padding-bottom: 5px;
+    background-color: black;
+    width: 85px;
+}
+
+ul.menu li {
+    font-size: 15px;
+    text-align: center;
+    margin: 5px;
+    padding: 0;
+}
+
+ul.menu li a.selected {
+    background-color: white;
+    color: red;
+    margin: 5px;
+    padding: 5px;
+}
+
+ul.menu li a {
+    background-color: black;
+    color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+ul.menu i.icon {
+    margin: 5px;
+}
+
+td:first-child {
+    padding-left: 0px;
+}
+
+td:not(:first-child) {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+table {
+    font-family: helvetica;
+}

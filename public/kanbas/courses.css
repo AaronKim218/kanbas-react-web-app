@@ -1,0 +1,31 @@
+ul.courseLinks {
+    list-style-type: none;
+    padding: 0px;
+}
+
+ul.courseLinks li {
+    font-size: 15px;
+    margin: 15px;
+}
+
+ul.courseLinks li a.selected {
+    color: black;
+    border-left: 5px solid black;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+ul.courseLinks li a {
+    color: red;
+    text-decoration: none;
+}
+
+a.moduleLink {
+    color: red;
+    text-decoration: none;
+}
+
+ul.list-group li {
+    list-style-type: none;
+}
+

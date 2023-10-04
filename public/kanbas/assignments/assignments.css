@@ -1,0 +1,27 @@
+a.assignmentLink {
+    color: black;
+    text-decoration: none;
+}
+
+li.assignment {
+    border-left: 5px solid green;
+}
+
+.wd-flex-row-container {
+    display: flex;
+    flex-direction: row;
+}
+
+div.assignmentCheck {
+    margin-left: auto; 
+}
+
+ul.editAssignment li {
+    list-style-type: none;
+}
+
+div.labelInput {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

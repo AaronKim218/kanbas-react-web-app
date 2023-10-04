@@ -1,0 +1,48 @@
+ul.profileMenu {
+    list-style-type: none;
+    width: 190px;
+    padding: 0px;
+}
+
+ul.profileMenu li {
+    font-size: 15px;
+    margin: 15px;
+}
+
+ul.profileMenu li a.selected {
+    color: black;
+    border-left: 5px solid black;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+ul.profileMenu li a {
+    color: red;
+    text-decoration: none;
+}
+
+td.profile a.editButton {
+    float: right;
+    color: black;
+}
+
+td.profile a {
+    color: red;
+}
+
+td.editProfile a.cancelEditing {
+    float: right;
+    color: black;
+}
+
+td.editProfile a.link {
+    color: red;
+}
+
+td.editProfile a.saveChanges {
+    color: white;
+}
+
+td.editProfile a.cancelChanges {
+    color: black;
+}
