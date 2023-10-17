@@ -1,11 +1,21 @@
+import ConditionalOutput from "./ConditionalOutput";
+import Styles from "./Styles";
+import Classes from "./Classes";
+import PathParameters from "./PathParameters";
 import JavaScript from "./JavaScript";
+import TodoList from "./todo/TodoList";
 
 function Assignment3() {
-    return (
-      <div className="container">
+ return (
+   <div>
         <h1>Assignment 3</h1>
-        <JavaScript />
-      </div>
-    );
-  }
+        <ConditionalOutput/>
+        <Styles/>
+        <Classes/>
+        <PathParameters/>
+        <JavaScript/>
+        <TodoList/>
+   </div>
+ );
+}
 export default Assignment3;

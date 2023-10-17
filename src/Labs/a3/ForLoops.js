@@ -8,6 +8,13 @@ function ForLoops() {
         stringArray2.push(
         string1.toUpperCase());
     }
+
+    return (
+        <>
+            <h2>Looping through arrays</h2>
+            stringArray2 = {stringArray2}<br />
+        </>
+    )
 }
 
 export default ForLoops

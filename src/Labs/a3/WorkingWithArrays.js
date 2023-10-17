@@ -17,15 +17,21 @@ function WorkingWithArrays() {
     functionScoped,   blockScoped,
     constant1,        numberArray1,   stringArray1
     ];
-    <>
-        <ArrayIndexAndLength />
-        <AddingAndRemovingDataToFromArrays />
-        <ForLoops />
-        <MapFunction />
-        <JsonStringify />
-        <FindFunction />
-        <FindIndex />
-    </>
+    return (
+        <>
+            <h3>Working With Arrays</h3>
+            numberArray1 = {numberArray1}<br />
+            stringArray1 = {stringArray1}<br />
+            variableArray1 = {variableArray1}<br />
+            <ArrayIndexAndLength />
+            <AddingAndRemovingDataToFromArrays />
+            <ForLoops />
+            <MapFunction />
+            <JsonStringify />
+            <FindFunction />
+            <FindIndex />
+        </>
+    )
 }
 
 export default WorkingWithArrays

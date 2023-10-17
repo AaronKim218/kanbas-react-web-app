@@ -13,6 +13,16 @@ function TemplateLiterals() {
     const loggedIn = false;
     const greeting2 = `Logged in: ${loggedIn ? "Yes" : "No"}`;
     console.log(greeting2)
+
+    return (
+        <>
+            <h3>Template Literals</h3>
+            result1 = {result1}<br />
+            result2 = {result2}<br />
+            greeting1 = {greeting1}<br />
+            greeting2 = {greeting2}<br />
+        </>
+    )
 }
 
 export default TemplateLiterals
