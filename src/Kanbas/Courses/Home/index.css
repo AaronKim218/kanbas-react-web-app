@@ -1,0 +1,8 @@
+.wide {
+    width: 900px; /* Set the desired pixel width here. */
+    /* Add other styles if needed, e.g., padding or margin. */
+  }
+
+.status-links {
+    margin-top: 60px;
+}

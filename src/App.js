@@ -4,7 +4,6 @@ import Kanbas from "./Kanbas";
 import {Routes, Route, Navigate} from "react-router";
 import { BrowserRouter } from "react-router-dom";
 
-
 function App() {
   return (
     <BrowserRouter>

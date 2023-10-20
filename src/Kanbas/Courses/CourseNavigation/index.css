@@ -1,0 +1,10 @@
+.list-group-item-custom {
+    border: none;
+    text-decoration: none;
+    
+}
+
+.selected {
+    border-left: 5px solid black;
+    padding-left: 10px;
+}
