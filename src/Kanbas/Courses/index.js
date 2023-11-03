@@ -1,4 +1,3 @@
-import db from "../../Kanbas/Database";
 import { Navigate, Route, Routes, useParams, useLocation, Link }
   from "react-router-dom";
 import CourseNavigation from "./CourseNavigation";
@@ -7,9 +6,9 @@ import Home from "./Home";
 import Assignments from "./Assignments";
 import AssignmentEditor from "./Assignments/AssignmentEditor";
 
-function Courses() {
+function Courses({ courses }) {
   const { courseId } = useParams();
-  const course = db.courses.find((course) => course._id === courseId);
+  const course = courses.find((course) => course._id === courseId);
 
   // get url from browser
   const { pathname } = useLocation();
@@ -31,10 +30,12 @@ function Courses() {
           <li class="breadcrumb-item active" aria-current="page">{last}</li>
         </ol>
       </nav>
-      <h1>Course {course.name}</h1>
       <div className="d-flex">
         <CourseNavigation />
         <div>
+          <div className="d-flex">
+            <h1>Course {course.name}</h1>
+          </div>
           <Routes>
             <Route path="/" element={<Navigate to="Home" />} />
             <Route path="Home" element={<Home/>} />
