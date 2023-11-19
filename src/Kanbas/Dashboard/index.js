@@ -1,4 +1,4 @@
-import { React } from "react";
+import { React, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./index.css";
 import courseCard1 from "../../assets/courseCard1.jpeg";
@@ -20,14 +20,14 @@ function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, upd
       <input value={course.endDate} className="form-control w-25 m-2" type="date"
         onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } />
       <button onClick={addNewCourse} className="btn btn-success m-2">Add</button>
-      <button onClick={updateCourse} className="btn btn-secondary m-2">Update</button>
+      <button onClick={()=>updateCourse(course)} className="btn btn-secondary m-2">Update</button>
       <div className="row">
         {courses.map((course, index) => (
             <div class="col-3 col-xxl-3 col-xl-3 col-lg-4 col-md-4 col-sm-6 col-xs-6">
                 <div class="card courseCard">
                     <img class="card-img-top" src={images[index%3]} alt="Card image cap"/>
                     <div class="card-body">
-                      <Link key={course._id} to={`/Kanbas/Courses/${course._id}`} className="list-group-item">
+                      <Link key={course._id} to={`/Kanbas/Courses/${course.number}`} className="list-group-item">
                         <button
                           className="btn btn-primary"
                           onClick={(event) => {
@@ -40,9 +40,9 @@ function Dashboard({ courses, course, setCourse, addNewCourse, deleteCourse, upd
                           className="btn btn-danger"
                           onClick={(event) => {
                             event.preventDefault();
-                            deleteCourse(course._id);
+                            deleteCourse(course);
                           }}>
-                          Delete
+                          Delete 
                         </button>
                         <br />
                         {course.name}
