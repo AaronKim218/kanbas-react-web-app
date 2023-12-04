@@ -23,6 +23,8 @@ function Nav() {
      <Link className="nav-link" to="/Kanbas">Kanbas</Link>
      <Link className="nav-link" to="/Labs/a4">A4</Link>
      <Link className="nav-link" to="/Labs/a5">A5</Link>
+     <Link className="nav-link" to="/Labs/signin">Sign In</Link>
+     <Link className="nav-link" to="/Labs/account">Account</Link>
    </nav>
  );
 }

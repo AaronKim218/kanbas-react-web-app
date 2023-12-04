@@ -27,6 +27,9 @@ import Assignment4 from "./a4";
 import Assignment5 from "./a5";
 import { Routes, Route, Navigate } from "react-router";
 import Nav from "../Nav";
+import Signin from "../users/signin";
+import Account from "../users/account";
+import UserTable from "../users/table";
 function Labs() {
  return (
   <Provider store={store}>
@@ -37,6 +40,9 @@ function Labs() {
       <Route path="a3" element={<Assignment3/>}/>
       <Route path="a4" element={<Assignment4/>}/>
       <Route path="a5" element={<Assignment5/>}/>
+      <Route path="signin" element={<Signin />} />
+      <Route path="account" element={<Account />} />
+      <Route path="/admin/users" element={<UserTable />} />
     </Routes>
    </div>
   </Provider>
